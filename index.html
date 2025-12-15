@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打撃成績カリキュレーター</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+    #textBox {
+        overflow-y: auto; /* 縦スクロールバーを必要に応じて表示 */
+        resize: vertical; /* ユーザーが高さを変えられるようにする（任意） */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHOPPERS 打撃成績カリキュレーター</h1>
+    </header>
+    <main>
+        <textarea id="textBox" rows="10" cols="50" placeholder="ここに打撃成績データを貼り付けてください"></textarea>
+        <div class="container">
+        <button type="button" id="loadButton">読み込み</button>
+        </div>
+        <h3>表示モード</h3>
+        <div class="mode-box">
+            <label><input type="radio" name="mode" value="avg"> 打率順</label>
+            <label><input type="radio" name="mode" value="obp"> 出塁率順</label>
+            <label><input type="radio" name="mode" value="rbi"> 打点順</label>
+            <label><input type="radio" name="mode" value="" checked> 並び替えなし</label>
+        </div>
+
+        <div id="resultArea"></div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

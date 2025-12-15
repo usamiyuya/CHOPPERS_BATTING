@@ -1,0 +1,102 @@
+/* パドレス風ストライプ背景 */
+body {
+    margin: 0;
+    font-family: "Yu Gothic", sans-serif;
+    background: repeating-linear-gradient(
+        90deg,
+        #e08b30 0px,
+        #593712 40px,
+        #eeb21a 40px,
+        #eaaf1a 80px
+    );
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* 中央の白いカード */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    color: #333;
+}
+
+/* タイトル */
+h1 {
+    text-align: center;
+    color: #41280d;
+    margin-bottom: 24px;
+}
+
+/* 入力欄 */
+textarea {
+    width: 98%;
+    height: 150px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #4b2e0f;
+    font-size: 16px;
+    resize: vertical;
+    background: #fff;
+    color: #333;
+}
+
+/* ボタン */
+button {
+    width: 50%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #4b2e0f;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #57442a;
+}
+
+.container {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    }
+
+.mode-box {
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.mode-box label {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* タイトル */
+h3 {
+    font-size: 30px;
+    color: #311900;
+    margin-bottom: 20px;
+}
+
+
+/* 結果表示 */
+#resultArea p {
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-left: 6px solid #000000;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #000;
+}
